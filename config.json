@@ -1,0 +1,33 @@
+{
+    "LOGGING":true,
+    "DEBUG":true,
+    "WEB":{
+        "URL":"...",
+        "UID":"...",
+        "PWD":"...",
+        "CONNECTION":{
+            "MAX_RETRIES":0,
+            "BACKOFF_FACTOR":0.5,
+            "BACKOFF_MAX":1,
+            "STATUS_FORCELIST":[408,409,429,500,502,503,504]
+        },
+        "VERIFICATION":false
+    },
+    "DB":{
+        "DRIVER":"{SQL Server}",
+        "SERVER":"...",
+        "DATABASE":"...",
+        "UID":"...",
+        "PWD":"..."
+    },
+    "ERR":{
+        "MAIL_HOST":["smtp.cmog.org",25],
+        "FROM_ADDR":"...",
+        "TO_ADDRS":"...",
+        "SUBJECT_DEFAULT":"[ERROR][...][An error occurred]"
+    },
+    "API":{
+        "RANGE_START":1528430400000,
+        "BASE_RANGE_STEP":360000
+    }
+}
